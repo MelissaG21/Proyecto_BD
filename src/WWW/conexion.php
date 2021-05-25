@@ -15,16 +15,29 @@
     $reg_number=$_POST['reg_number'];
     $customer_id=$_POST['customer_id'];
     $rental_status_code=$_POST['rental_status_code'];
+    $customer_name = $_POST['customer_name'];
+    $customer_details = $_POST['customer_details'];
 
-    $insertarDatos = "INSERT INTO vehicle_rentals VALUES('$vehicle_rental_id',
+    $insertarDatos="INSERT INTO customers VALUES('$customer_id',
+                                                '$customer_name',
+                                                '$customer_details')";
+    
+    $ejecutarInsertar = mysqli_query($enlace,$insertarDatos);
+
+    if(!$ejecutarInsertar){
+        echo"Error En  linea sql";
+    }
+
+
+    $insertarDatos2 = "INSERT INTO vehicle_rentals VALUES('$vehicle_rental_id',
                                                         '$date_from',
                                                         '$date_to',
                                                         '$reg_number',
                                                         '$customer_id',
                                                         '$rental_status_code')";
-    $ejecutarInsertar = mysqli_query($enlace,$insertarDatos);
+    $ejecutarInsertar2 = mysqli_query($enlace,$insertarDatos2);
 
-    if(!$ejecutarInsertar){
+    if(!$ejecutarInsertar2){
         echo"Error En  linea sql";
     }
 
