@@ -59,7 +59,7 @@
     <h2>¿Te interesa? llena este formulario:)</h2>
 
     <div>
-        <form method="POST" action="conexion.php">
+        <form method="POST" action="conexion2.php">
             <label>Id del cliente</label>
             <input type="text" name="customer_id" required>
 
@@ -74,7 +74,7 @@
             <input type="text" name="customer_details" id="" required>
             
             <br>
-            <input class="button" type="submit" value="Enviar">
+            <input class="button" type="submit">
         </form>
         <form method="POST" action="conexion.php">
             <label>Id de renta del automovil</label>
@@ -126,15 +126,6 @@
 
             <label>Id del cliente</label>
             <input type="text" name="customer_id" required>
-
-            <br>
-
-            <label>Codigo de estatus de renta</label>
-            <select name="rental_status_code" id="" required>
-                <option value="">Seleccionar</option>
-                <option value="0">Disponible</option>
-                <option value="1">No disponible</option>
-            </select>
 
             <input class="button" type="submit" value="Enviar">
         </form>
