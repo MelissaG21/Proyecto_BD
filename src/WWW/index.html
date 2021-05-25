@@ -59,71 +59,63 @@
     <h2>¿Te interesa? llena este formulario:)</h2>
 
     <div>
-        <form method="POST" action="/form">
-            <label for="name">Nombre</label>
-            <input type="text" name="name" required>
+        <form method="POST" action="conexion.php">
+            <label>Id de renta del automovil</label>
+            <input type="text" name="vehicle_rental_id" required>
+
+            <br>
+
+            <label>Fecha de inicio de renta</label>
+            <input type="date" name="date_from" id="" required>
 
             <br>
             
-            <label for="email">Correo electrónico</label>
-            <input id="email" type="email" name="email" required>
-
+            <label>Fecha de fin de renta</label>
+            <input type="date" name="date_to" id="" required>
+            
             <br>
 
-            <label for="">Teléfono</label>
-            <input type="tel" name="phone" required>
-
-            <br>
-
-            <label for="">Fecha de recogida</label>
-            <input type="date" name="date1" id="" required>
-
-            <br>
-
-            <label for="">Fecha de entrega</label>
-            <input type="date" name="date2" id="" required>
-
-            <br>
-            <br>
-
-            <label for="">Auto a rentar</label>
-            <select name="car" id="" required>
+            <label>Numero de region</label>
+            <select name="reg_number" id="" required>
                 <option value="">Seleccionar</option>
-                <option value="Toyota-Corolla 2020">Toyota-Corolla 2020</option>
-                <option value="Volkswagen-Jetta 2019">Volkswagen-Jetta 2019</option>
-                <option value="Nissan-Sentra 2021">Nissan-Sentra 2021</option>
-                <option value="Honda-Civic 2021">Honda-Civic 2021</option>
-                <option value="Mazda-Mazda3 2019">Mazda-Mazda3 2019</option>
-                <option value="Audi-Q8 2020">Audi-Q8 2020</option>
-                <option value="Nissan-Kicks 2019">Nissan-Kicks 2019</option>
-                <option value="Toyota-Rav4 Hybrid 2021">Toyota-Rav4 Hybrid 2021</option>
-                <option value="Nissan-X-Trail 2021">Nissan-X-Trail 2021</option>
-                <option value="Kia-Rio Hatchback 2021">Kia-Rio Hatchback 2021</option>
-                <option value="Suzuki-Swift 2020">Suzuki-Swift 2020</option>
-                <option value="Ford-Escape 2019">Ford-Escape 2019</option>
-                <option value="Ford-Lobo 2020">Ford-Lobo 2020</option>
-                <option value="Chevrolet-Cheyenne 2019">Chevrolet-Cheyenne 2019</option>
-                <option value="Suzuki-Jimmy 2021">Suzuki-Jimmy 2021</option>
-                <option value="Ford-Fiesta 2019">Ford-Fiesta 2019</option>
-                <option value="Nissan-Altima 2021">Nissan-Altima 2021</option>
-                <option value="Honda-Accord 2019">Honda-Accord 2019</option>
-                <option value="Toyota-Camry 2019">Toyota-Camry 2019</option>
-                <option value="Toyota-Yaris 2019">Toyota-Yaris 2019</option>
-                <option value="Ford-Figo 2020">Ford-Figo 2020</option>
-                <option value="BMW-X5 2021">BMW-X5 2021</option>
-                <option value="Volkswagen-Virtus 2019">Volkswagen-Virtus 2019</option>
-                <option value="Tesla-ModeloX 2020">Tesla-ModeloX 2020</option>
-                <option value="Toyota-Prius Hybrid 2021">Toyota-Prius Hybrid 2021</option>
+                <option value="AA01">AA01</option>
+                <option value="AA02">AA02</option>
+                <option value="AA03">AA03</option>
+                <option value="AA04">AA04</option>
+                <option value="AA05">AA05</option>
+                <option value="AA06">AA06</option>
+                <option value="AA07">AA07</option>
+                <option value="AA08">AA08</option>
+                <option value="AA09">AA09</option>
+                <option value="AA10">AA10</option>
+                <option value="AA11">AA11</option>
+                <option value="AA12">AA12</option>
+                <option value="AA13">AA13</option>
+                <option value="AA14">AA14</option>
+                <option value="AA15">AA15</option>
+                <option value="AA16">AA16</option>
+                <option value="AA17">AA17</option>
+                <option value="AA18">AA18</option>
+                <option value="AA19">AA19</option>
+                <option value="AA20">AA20</option>
+                <option value="AA21">AA21</option>
+                <option value="AA22">AA22</option>
+                <option value="AA23">AA23</option>
+                <option value="AA24">AA24</option>
             </select>
 
             <br>
+
+            <label>Id del cliente</label>
+            <input type="text" name="customer_id" required>
+
             <br>
 
-            <label>Transmisión</label>
-            <select name="transmission" id="" required>
+            <label>Codigo de estatus de renta</label>
+            <select name="rental_status_code" id="" required>
                 <option value="">Seleccionar</option>
-                <option value="manual">Manual</option>
-                <option value="automatic">Automático</option>
+                <option value="0">Disponible</option>
+                <option value="1">No disponible</option>
             </select>
 
             <input class="button" type="submit" value="Enviar">
