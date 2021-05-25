@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="car.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Automax</title>
+    <title>Rent-A-Car</title>
 </head>
 <body>
-    <h1 id="titulo-principal">TOROMAX</h1>
+    <h1 id="titulo-principal">Rent-A-Car</h1>
     <h2 id="subtitulo">RENTA DE AUTOS EN CHIHUAHUA</h2>
     <a id= "contact" href="contact.html">Contacto</a>
     <a id= "about" href="about.html">Acerca de</a>
@@ -59,6 +59,23 @@
     <h2>¿Te interesa? llena este formulario:)</h2>
 
     <div>
+        <form method="POST" action="conexion.php">
+            <label>Id del cliente</label>
+            <input type="text" name="customer_id" required>
+
+            <br>
+
+            <label>Nombre del Cliente</label>
+            <input type="text" name="customer_name" id="" required>
+
+            <br>
+            
+            <label>Detalles del cliente</label>
+            <input type="text" name="customer_details" id="" required>
+            
+            <br>
+            <input class="button" type="submit" value="Enviar">
+        </form>
         <form method="POST" action="conexion.php">
             <label>Id de renta del automovil</label>
             <input type="text" name="vehicle_rental_id" required>
