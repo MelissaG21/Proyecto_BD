@@ -4,7 +4,7 @@ Proyecto del tercer parcial de la matera fundamentos de bases de datos. Este es 
 
 ### Prerequisitos
 
-Se tiene que contar con alguna version de Node js para poder lanzar el servidor, también se tiene que contar con una versión de xampp y phpMyAdmin para desplegar la base de datos, así como descargar el repositorio para tener los archivos en el ordenador y posteriormente desplegarlo en la terminal.
+Se tiene que contar con una versión de xampp y phpMyAdmin para desplegar la base de datos, así como descargar el repositorio para tener los archivos en el ordenador y posteriormente desplegarlo en la terminal.
 
 ### Instalación
 
@@ -12,24 +12,18 @@ Se necesita instalar xampp para desplegar la base de datos. Se puede instalar de
 
 Se necesita instalar phpMyadmin para desplegar la base de datos. Se puede instalar desde la su [pagina oficial](https://www.phpmyadmin.net/).
 
-Se necesita instalar nodejs para poder correr el servidor. Se puede instalar desde la terminal con los siguientes comandos: 
-```
-apt-get update
-```
-```
-apt-get install nodejs
-```
-
 ## Ejecución las pruebas
 
+### 1.
+Es necesario que la carpeta WWW se encuentre en htdocs dentro de XAMPP.
 
-Para correr el servidor, se utilizan los siguientes comandos en terminal:
+### 2.
+Se activa mysql y apache desde XAMPP.
+
+### 3.
+En el navegador se accede con la siguinete ruta.
 ```
-node app.js
-```
-Con el servidor ejecutandose, podemos acceder al sitio web por medio del navegador en la siguiente dirección;
-```
-http://localhost:8888
+http://localhost/www
 ```
 
 ## Construido con
